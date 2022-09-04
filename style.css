@@ -332,14 +332,14 @@ input[type="radio"] {
 h1, h2 {
     font-family: var(--ff-main);
     font-weight: 600;
-    font-size: clamp(1rem, 7vw ,3rem);
+    font-size: clamp(2rem, 7vw ,3rem);
     padding-bottom: 1em;
 }
 
 .subtitle {
     font-family: var(--ff-body);
     font-weight: 400;
-    font-size: clamp(1rem, 4vw , 1.5rem);
+    font-size: clamp(1.1rem, 4vw , 1.5rem);
 }
 
 .scroll {
@@ -769,5 +769,6 @@ footer p {
 
     .contact-section {
         gap: 4em;
+        padding-bottom: 1em;
     }
 }
