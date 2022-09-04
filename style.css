@@ -514,7 +514,6 @@ button[type="submit"]:focus {
 .contact-section {
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 3em 0;
 }
 
 .contact-section h2 {
@@ -531,7 +530,7 @@ form.flex {
     max-width: 35em;
     width: 100%;
     background-color: #0a211e;
-    padding: .2em 4em;
+    padding: .3em 4em;
     border-top-right-radius: 5em;
 }
 
