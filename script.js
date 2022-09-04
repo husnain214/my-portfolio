@@ -33,7 +33,7 @@ function toggleNav () {
 }
 
 hamBtn.addEventListener ("click", () => {
-    hamMenu.style.height = "100vh"
+    hamMenu.style.height = "100%"
 })
 
 cross.addEventListener ("click", () => {
