@@ -2,7 +2,9 @@ const root = document.documentElement
 const lightTheme = document.querySelector ("#lightTheme")
 const darkTheme = document.querySelector ("#darkTheme")
 const logo = document.querySelector (".logo")
-const hamMenu = document.querySelector (".ham-menu")
+const hamMenu = document.querySelector (".hamburger-section")
+const hamBtn = document.querySelector ("#hamburger-btn")
+const cross = document.querySelector ("#cross")
 
 lightTheme.addEventListener ("click", setLightTheme)
 darkTheme.addEventListener ("click", setDarkTheme)
@@ -29,3 +31,11 @@ function toggleNav () {
         hamMenu.classList.remove ("hamAnimationHide")
     }
 }
+
+hamBtn.addEventListener ("click", () => {
+    hamMenu.style.height = "100vh"
+})
+
+cross.addEventListener ("click", () => {
+    hamMenu.style.height = "0"
+})
