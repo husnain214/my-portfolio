@@ -38,6 +38,7 @@ ul {
 html {
     scroll-behavior: smooth;
     min-width: fit-content;
+    height: 100%;
 }
 
 html:focus-within {
@@ -46,11 +47,12 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  min-height: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--body-bg);
   font-family: var(--ff-main), sans-serif;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -818,6 +820,7 @@ footer p {
 
     .about-me-section {
         gap: 5em;
+        padding-inline: 0;
     }
 
     .about-me-content {
@@ -827,5 +830,6 @@ footer p {
     .contact-section {
         gap: 4em;
         padding-bottom: 1em;
+        display: none;
     }
 }
