@@ -398,7 +398,17 @@ h1, h2 {
     padding: 3em 4em;
 }
 
+.thumbnail {
+    margin-bottom: 1em;
+}
 
+.thumbnail img {
+    border-radius: 10px;
+    max-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 article:nth-child(1) {
     grid-area: a1;
@@ -428,6 +438,7 @@ article:nth-child(6) {
 article {
     border-left: 2px solid;
     padding: 1em;
+    margin-bottom: 2em;
 }
 
 article h3 {
@@ -435,21 +446,62 @@ article h3 {
     padding-bottom: 1em;
 }
 
+.grid-buttons {
+    margin-top: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.grid-buttons button {
+    background-color: var(--dark-green);
+    border: none;
+    padding: .5em 1em;
+    border-radius: 20px;
+    display: flex;
+    gap: 1em;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.grid-buttons button:hover,
+.grid-buttons button:focus {
+    transform: translateY(-5px);
+}
+
+.grid-buttons svg {
+    height: 20px;
+    stroke: var(--body-bg);
+}
+
+.grid-buttons a:nth-child(1) svg {
+    fill: var(--body-bg);
+}
+.grid-buttons a:nth-child(2) svg {
+    fill: var(--dark-green);
+}
+
+.grid-buttons span {
+    color: var(--body-bg);
+}
+
 /* ABOUT ME SECTION */
 
 .about-me-section {
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 2em 0;
+    flex-flow: row wrap;
+    padding: 4em 4em;
+    gap: 4em;
 }
 
 .about-me-content {
     text-align: center;
-    flex-basis: 50%;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    max-width: 35em;
+    width: 100%;
 }
 
 .fiverr-card {
-    padding: 3em 2em;
+    padding: 3em 4em;
     background-color: var(--dark-green);
     display: flex;
     justify-content: center;
@@ -734,6 +786,7 @@ footer p {
         "a4 a4 a2 a5"
         "a4 a4 a6 a6";
         gap: 2em;
+        margin-bottom: 0em;
     }
 }
 
@@ -757,6 +810,10 @@ footer p {
 
     .tech-stack svg {
         height: 50px;
+    }
+
+    .work-section {
+        padding: 2em;
     }
 
     .about-me-section {
