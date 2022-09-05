@@ -37,6 +37,7 @@ ul {
 /* Set core root defaults */
 html {
     scroll-behavior: smooth;
+    width: fit-content;
 }
 
 html:focus-within {
@@ -104,7 +105,7 @@ select {
 /* HEADER SECTION */
 
 header {
-    padding-top: 20px;
+    padding-top: 1em;
     min-height: 100vh;
 }
 
@@ -606,6 +607,8 @@ form :is(input, textarea) {
 }
 
 label {
+    height: fit-content;
+    width: fit-content;
     position: absolute;
     top: 0;
     left: 0;
