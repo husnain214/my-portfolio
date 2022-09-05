@@ -46,6 +46,7 @@ html:focus-within {
 /* Set core body defaults */
 body {
   height: 100vh;
+  width: fit-content;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--body-bg);
