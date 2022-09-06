@@ -42,7 +42,6 @@ cross.addEventListener ("click", () => {
 })
 
 document.addEventListener ("mousemove", e => {
-    console.log (e)
     cursor.style.top = `${e.pageY- 10}px`
     cursor.style.left = `${e.pageX - 10}px`
 })
