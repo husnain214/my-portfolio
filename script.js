@@ -5,6 +5,7 @@ const logo = document.querySelector (".logo")
 const hamMenu = document.querySelector (".hamburger-section")
 const hamBtn = document.querySelector ("#hamburger-btn")
 const cross = document.querySelector ("#cross")
+const cursor = document.querySelector ("#cursor")
 
 lightTheme.addEventListener ("click", setLightTheme)
 darkTheme.addEventListener ("click", setDarkTheme)
@@ -38,4 +39,10 @@ hamBtn.addEventListener ("click", () => {
 
 cross.addEventListener ("click", () => {
     hamMenu.style.height = "0"
+})
+
+document.addEventListener ("mousemove", e => {
+    console.log (e)
+    cursor.style.top = `${e.pageY- 10}px`
+    cursor.style.left = `${e.pageX - 10}px`
 })

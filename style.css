@@ -1,6 +1,5 @@
 :root {
     --body-bg: #eaf3f1;
-    --sea-green: #039BE5;
     --dark-green: #0A211E; 
     --label-color: #eaf3f1;
     --ff-main: "Montserrat";
@@ -100,6 +99,29 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* CURSOR SECTION */
+
+.cursor {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: #eaf3f1;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: all 200ms ease-out;
+    border-radius: 50%;
+    animation: cursorAnim 2s ease-in-out infinite;
+}
+
+@keyframes cursorAnim {
+    0%, 100% {
+        scale: 1;
+    }
+    50% {
+        scale: .7;
+    }
 }
 
 /* HEADER SECTION */
