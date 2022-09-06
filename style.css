@@ -37,16 +37,16 @@ ul {
 /* Set core root defaults */
 html {
     scroll-behavior: smooth;
-    width: fit-content;
 }
 
 html:focus-within {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  min-width: 100vw;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: var(--body-bg);
