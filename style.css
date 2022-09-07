@@ -36,7 +36,6 @@ ul {
 /* Set core root defaults */
 html {
     scroll-behavior: smooth;
-    width: fit-content;
 }
 
 html:focus-within {
@@ -864,5 +863,17 @@ footer p {
     .contact-section {
         gap: 4em;
         padding-bottom: 1em;
+    }
+}
+
+@media (max-width: 350px) {
+    .tech-stack {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2em;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
