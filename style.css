@@ -867,6 +867,12 @@ footer p {
 }
 
 @media (max-width: 400px) {
+    .tech-stack {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2em;
+    }
+
     .contact-section h2 {
         padding-top: 1em;
     }
@@ -877,7 +883,7 @@ footer p {
     }
 }
 
-@media (max-width: 260px) {
+@media (max-width: 250px) {
     .hamburger-items.flex svg {
         height: 30px;
     }
@@ -886,9 +892,11 @@ footer p {
         font-size: 6vw;
     }
 
-    .tech-stack {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 2em;
+    .contact-details {
+        width: 100%
     }
+
+    .socials.flex {
+        flex-wrap: wrap;
+    } 
 }
