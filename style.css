@@ -866,6 +866,17 @@ footer p {
     }
 }
 
+@media (max-width: 400px) {
+    .contact-section h2 {
+        padding-top: 1em;
+    }
+
+    .form-section {
+        border-top-right-radius: 3em;
+        padding-inline: 20px;
+    }
+}
+
 @media (max-width: 250px) {
     .hamburger-items.flex svg {
         height: 30px;
