@@ -279,7 +279,7 @@ input[type="checkbox"]:checked ~ div {
 
 .hamburger-items.flex {
     flex-direction: column;
-    font-size: 2rem;
+    font-size: clamp(1rem, 5vw, 3rem);
     align-self: flex-start;
     text-transform: uppercase;
 }
@@ -841,6 +841,9 @@ footer p {
 
     .tech-stack {
         padding-inline: 2em;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2em;
     }
 
     .tech-stack svg {
@@ -866,14 +869,8 @@ footer p {
     }
 }
 
-@media (max-width: 350px) {
-    .tech-stack {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 2em;
-    }
-
-    body {
-        overflow-x: hidden;
+@media (max-width: 300px) {
+    .hamburger-section svg {
+        height: 30px;
     }
 }
