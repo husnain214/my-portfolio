@@ -841,9 +841,6 @@ footer p {
 
     .tech-stack {
         padding-inline: 2em;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 2em;
     }
 
     .tech-stack svg {
@@ -869,12 +866,18 @@ footer p {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 250px) {
     .hamburger-items.flex svg {
         height: 30px;
     }
 
     .hamburger-items li {
         font-size: 6vw;
+    }
+
+    .tech-stack {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2em;
     }
 }
