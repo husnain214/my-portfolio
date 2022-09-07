@@ -896,6 +896,10 @@ footer p {
         width: 100%
     }
 
+    html {
+        width: fit-content;
+    }
+
     .socials.flex {
         flex-wrap: wrap;
     } 
