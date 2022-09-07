@@ -279,7 +279,7 @@ input[type="checkbox"]:checked ~ div {
 
 .hamburger-items.flex {
     flex-direction: column;
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: 2rem;
     align-self: flex-start;
     text-transform: uppercase;
 }
@@ -870,7 +870,11 @@ footer p {
 }
 
 @media (max-width: 300px) {
-    .hamburger-section svg {
+    .hamburger-items.flex svg {
         height: 30px;
+    }
+
+    .hamburger-items li {
+        font-size: 6vw;
     }
 }
