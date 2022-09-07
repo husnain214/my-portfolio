@@ -877,7 +877,7 @@ footer p {
     }
 }
 
-@media (max-width: 250px) {
+@media (max-width: 260px) {
     .hamburger-items.flex svg {
         height: 30px;
     }
