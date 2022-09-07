@@ -6,6 +6,11 @@ const hamMenu = document.querySelector (".hamburger-section")
 const hamBtn = document.querySelector ("#hamburger-btn")
 const cross = document.querySelector ("#cross")
 const cursor = document.querySelector ("#cursor")
+const hamburgerNavItems = document.querySelectorAll (".hamburger-items li")
+
+hamburgerNavItems.forEach(
+    item => item.addEventListener("click", () => hamMenu.style.height = "0")
+)
 
 lightTheme.addEventListener ("click", setLightTheme)
 darkTheme.addEventListener ("click", setDarkTheme)

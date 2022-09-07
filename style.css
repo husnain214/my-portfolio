@@ -93,6 +93,15 @@ select {
   }
 }
 
+/* DISABLE CUSTOM CURSOR ON TOUCH SCREEN DEVICES */
+/* https://getridbug.com/html/disable-javascript-custom-cursor-on-touch-devices/ */
+
+@media (hover: none) {
+    .cursor {
+        display: none;
+    }
+}
+
 /* UTILITY CLASSES */
 
 .flex {
