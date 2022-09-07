@@ -36,6 +36,7 @@ ul {
 /* Set core root defaults */
 html {
     scroll-behavior: smooth;
+    width: fit-content;
 }
 
 html:focus-within {
