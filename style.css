@@ -4,6 +4,9 @@
     --label-color: #eaf3f1;
     --ff-main: "Montserrat";
     --ff-body: "Poppins";
+    --fw-light: 400;
+    --fw-bold: 600;
+    --fw-bolder: 700;
 }
 
 /* Box sizing rules */
@@ -212,7 +215,7 @@ button:focus {
 
 button span {
     color: var(--body-bg);
-    font-weight: 400;
+    font-weight: var(--fw-light);
 }
 
 nav button svg {
@@ -362,20 +365,21 @@ input[type="radio"] {
     padding-top: 5em;
 }
 
-.hero-content h1 {
-    text-transform: uppercase;
-}
-
 h1, h2 {
     font-family: var(--ff-main);
-    font-weight: 700;
+    font-weight: var(--fw-bold);
     font-size: clamp(1.5rem, 7vw ,3rem);
     padding-bottom: 1em;
 }
 
+.hero-content h1 {
+    text-transform: uppercase;
+    font-weight: var(--fw-bolder);
+}
+
 .subtitle {
     font-family: var(--ff-body);
-    font-weight: 400;
+    font-weight: var(--fw-light);
     font-size: clamp(1.1rem, 4vw , 1.5rem);
 }
 
@@ -425,7 +429,7 @@ h1, h2 {
 .col span {
     display: block;
     margin-top: 1em;
-    font-weight: 600;
+    font-weight: var(--fw-bold);
     font-size: clamp(1rem, 2vw, 1.05rem);
 }
 
@@ -560,7 +564,7 @@ article h3 {
     border: none;
     outline: none;
     padding: .5em 2em;
-    font-weight: 600;
+    font-weight: var(--fw-bold);
     margin-top: 20px;
     cursor: pointer;
     transition: border-radius .5s;
@@ -625,7 +629,7 @@ label {
     left: 0;
     right: 0;
     bottom: 0;
-    font-weight: 400;
+    font-weight: var(--fw-light);
     font-size: 1rem;
     top: 10px;
     left: 10px;
@@ -656,7 +660,7 @@ textarea:valid ~ label {
 
 button[type="submit"] {
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: var(--fw-bold);
     padding: .2em 2em;
     border-radius: 20px;
     border: none;
