@@ -367,13 +367,13 @@ input[type="radio"] {
 h1, h2 {
     font-family: var(--ff-main);
     font-weight: var(--fw-bold);
-    font-size: clamp(1.5rem, 7vw ,3rem);
     padding-bottom: 1em;
 }
 
 .hero-content h1 {
     text-transform: uppercase;
     font-weight: var(--fw-bolder);
+    font-size: clamp(1.5rem, 7vw ,3rem);
 }
 
 .subtitle {
@@ -433,6 +433,10 @@ h1, h2 {
 
 /* PORTFOLIO SECTION */
 
+h2 {
+    font-size: clamp(2rem, 7vw ,3rem);
+}
+
 .work-section {
     padding: 3em 4em;
 }
@@ -458,6 +462,7 @@ article {
 article h3 {
     font-size: 1.5rem;
     padding-bottom: 1em;
+    font-weight: 600;
 }
 
 .grid-buttons {
