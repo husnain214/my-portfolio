@@ -8,8 +8,8 @@ const cross = document.querySelector ("#cross")
 const cursor = document.querySelector ("#cursor")
 const hamburgerNavItems = document.querySelectorAll (".hamburger-items li")
 
-hamburgerNavItems.forEach(
-    item => item.addEventListener("click", () => hamMenu.style.height = "0")
+hamburgerNavItems.forEach( item => 
+    item.addEventListener("click", () => hamMenu.style.height = "0")
 )
 
 lightTheme.addEventListener ("click", setLightTheme)
@@ -38,13 +38,9 @@ function toggleNav () {
     }
 }
 
-hamBtn.addEventListener ("click", () => {
-    hamMenu.style.height = "100%"
-})
+hamBtn.addEventListener ("click", () => hamMenu.style.height = "100%")
 
-cross.addEventListener ("click", () => {
-    hamMenu.style.height = "0"
-})
+cross.addEventListener ("click", () => hamMenu.style.height = "0")
 
 document.addEventListener ("mousemove", e => {
     cursor.style.top = `${e.pageY- 10}px`
