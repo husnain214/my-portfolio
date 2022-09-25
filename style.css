@@ -368,8 +368,8 @@ input[type="radio"] {
 
 h1, h2 {
     font-family: var(--ff-main);
-    font-weight: 600;
-    font-size: clamp(2rem, 7vw ,3rem);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 7vw ,3rem);
     padding-bottom: 1em;
 }
 
@@ -813,6 +813,11 @@ footer p {
     .form-section {
         border-top-right-radius: 3em;
         padding-inline: 20px;
+    }
+
+    .tech-stack.flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
