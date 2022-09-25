@@ -147,7 +147,7 @@ nav.flex {
     justify-content: space-between;
     padding: .3em 0;
     max-width: 70em;
-    width: 95%;
+    width: 90%;
     margin-inline: auto;
     background-color: var(--body-bg);
 }
@@ -215,7 +215,6 @@ button:focus {
 
 button span {
     color: var(--body-bg);
-    font-weight: var(--fw-light);
 }
 
 nav button svg {
@@ -379,7 +378,6 @@ h1, h2 {
 
 .subtitle {
     font-family: var(--ff-body);
-    font-weight: var(--fw-light);
     font-size: clamp(1.1rem, 4vw , 1.5rem);
 }
 
@@ -629,7 +627,6 @@ label {
     left: 0;
     right: 0;
     bottom: 0;
-    font-weight: var(--fw-light);
     font-size: 1rem;
     top: 10px;
     left: 10px;
@@ -804,12 +801,6 @@ footer p {
 }
 
 @media (max-width: 400px) {
-    .tech-stack {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 2em;
-    }
-
     .contact-section h2 {
         padding-top: 1em;
     }
