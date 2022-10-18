@@ -842,3 +842,19 @@ footer p {
         flex-wrap: wrap;
     } 
 }
+
+@media (min-width: 1000px) {
+    header {
+        min-height: fit-content;
+        padding-bottom: 3em;
+    }
+
+    .about-me-section,
+    .contact-section {
+        justify-content: space-around;
+    }
+
+    .form-section {border-top-left-radius: 5em;}
+
+    .contact-details {margin-inline: 0;}
+}
