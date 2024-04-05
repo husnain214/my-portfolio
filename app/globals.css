@@ -1,0 +1,235 @@
+:root {
+  --clr-primary: #0a0909;
+  --clr-secondary: #c4c4c4;
+  --clr-accent: #ffffff;
+  --clr-orange: #ed7615;
+  --clr-lavender: #6e3cf5;
+  --clr-sussie: #38e1f1;
+  --clr-blue-jeans: #0082ff;
+
+  --fs-display-2xl: 227px;
+  --fs-xl-display: 140px;
+  --fs-display: 84px;
+
+  --fs-heading-1: 64px;
+  --fs-heading-2: 48px;
+  --fs-heading-3: 32px;
+  --fs-heading-4: 24px;
+  --fs-heading-5: 20px;
+  --fs-heading-6: 48px;
+
+  --fs-body-xl: 20px;
+  --fs-body-lg: 18px;
+  --fs-body-md: 14px;
+}
+
+/* https://piccalil.li/blog/a-more-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  display: grid;
+  padding-block: 32px;
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body-xl);
+  color: var(--clr-primary);
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+.container {
+  --padding-inline: 2.5rem;
+  --max-width: 76.1875rem;
+
+  width: min(var(--max-width), 100% - var(--padding-inline));
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.grid-center {
+  place-items: center;
+}
+
+.bg-primary {
+  background-color: var(--clr-primary);
+}
+
+.text-primary {
+  background-color: var(--clr-primary);
+}
+
+.bg-secondary {
+  background-color: var(--clr-secondary);
+}
+
+.text-secondary {
+  color: var(--clr-secondary);
+}
+
+.bg-accent {
+  background-color: var(--clr-accent);
+}
+
+.text-accent {
+  color: var(--clr-accent);
+}
+
+.text-display-2xl {
+  font-size: var(--fs-display-2xl);
+}
+
+.text-xl-display {
+  font-size: var(--fs-xl-display);
+}
+
+.text-display {
+  font-size: var(--fs-display);
+}
+
+.text-heading-1 {
+  font-size: var(--fs-heading-1);
+}
+
+.text-heading-2 {
+  font-size: var(--fs-heading-2);
+}
+
+.text-heading-3 {
+  font-size: var(--fs-heading-3);
+}
+
+.text-heading-4 {
+  font-size: var(--fs-heading-4);
+}
+
+.text-heading-5 {
+  font-size: var(--fs-heading-5);
+}
+
+.text-heading-6 {
+  font-size: var(--fs-heading-6);
+}
+
+.text-body-xl {
+  font-size: var(--fs-body-xl);
+}
+
+.text-body-lg {
+  font-size: var(--fs-body-lg);
+}
+
+.text-body-md {
+  font-size: var(--fs-body-md);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.rounded-full {
+  border-radius: 100vmax;
+}

@@ -1,0 +1,12 @@
+.navigation {
+  padding: 5px;
+}
+
+.list-item {
+  padding: 9px 16px;
+}
+
+.list-item[aria-current="true"] {
+  color: var(--clr-primary);
+  background-color: var(--clr-accent);
+}

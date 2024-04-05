@@ -1,4 +1,14 @@
+import { Hero, Projects, Expertise, Testimonials, Contact } from "@/components";
+
 export default function Home() {
-  return <h1>Hello World</h1>;
+  return (
+    <main>
+      <Hero />
+      <Projects />
+      <Expertise />
+      <Testimonials />
+      <Contact />
+    </main>
+  );
 }
 

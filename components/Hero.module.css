@@ -1,0 +1,13 @@
+.hero-section {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding-block: 30px;
+}
+
+.subtitle {
+  width: min(471px, 100%);
+}
+
+.scroll-cta {
+  padding: 16px 32px;
+}
