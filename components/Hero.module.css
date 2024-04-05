@@ -1,7 +1,28 @@
 .hero-section {
-  grid-template-columns: 1fr auto;
-  align-items: center;
   padding-block: 30px;
+  align-items: end;
+}
+
+.primary-heading {
+  font-size: var(--fs-display);
+  font-weight: 600;
+  flex-shrink: 1;
+}
+
+@media (width > 35em) {
+  .primary-heading {
+    font-size: var(--fs-display-xl);
+  }
+}
+
+@media (width > 45em) {
+  .primary-heading {
+    font-size: var(--fs-display-2xl);
+  }
+}
+
+.secondary-heading {
+  font-size: var(--fs-heading-5);
 }
 
 .subtitle {
@@ -10,4 +31,6 @@
 
 .scroll-cta {
   padding: 16px 32px;
+  margin-bottom: 2.5rem;
+  flex-shrink: 0;
 }

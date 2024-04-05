@@ -8,7 +8,7 @@
   --clr-blue-jeans: #0082ff;
 
   --fs-display-2xl: 227px;
-  --fs-xl-display: 140px;
+  --fs-display-xl: 140px;
   --fs-display: 84px;
 
   --fs-heading-1: 64px;
@@ -67,12 +67,26 @@ body {
   line-height: 1.5;
   display: grid;
   padding-block: 32px;
+  font-size: var(--fs-body);
 
   font-family: var(--ff-primary);
-  font-size: var(--fs-body-xl);
   color: var(--clr-primary);
+  font-weight: 500;
 }
 
+@media (width > 35em) {
+  body {
+    font-size: var(--fs-body-md);
+    font-weight: 400;
+  }
+}
+
+@media (width > 45em) {
+  body {
+    font-size: var(--fs-body-lg);
+    font-weight: 500;
+  }
+}
 /* Set shorter line heights on headings and interactive elements */
 h1,
 h2,
@@ -90,6 +104,16 @@ h2,
 h3,
 h4 {
   text-wrap: balance;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 500;
 }
 
 /* A elements that don't have a class get default styles */
@@ -130,6 +154,10 @@ textarea:not([rows]) {
 
   width: min(var(--max-width), 100% - var(--padding-inline));
   margin-inline: auto;
+}
+
+.flow > * + * {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -178,52 +206,16 @@ textarea:not([rows]) {
   color: var(--clr-accent);
 }
 
-.text-display-2xl {
-  font-size: var(--fs-display-2xl);
+.font-normal {
+  font-weight: 400;
 }
 
-.text-xl-display {
-  font-size: var(--fs-xl-display);
+.font-medium {
+  font-weight: 500;
 }
 
-.text-display {
-  font-size: var(--fs-display);
-}
-
-.text-heading-1 {
-  font-size: var(--fs-heading-1);
-}
-
-.text-heading-2 {
-  font-size: var(--fs-heading-2);
-}
-
-.text-heading-3 {
-  font-size: var(--fs-heading-3);
-}
-
-.text-heading-4 {
-  font-size: var(--fs-heading-4);
-}
-
-.text-heading-5 {
-  font-size: var(--fs-heading-5);
-}
-
-.text-heading-6 {
-  font-size: var(--fs-heading-6);
-}
-
-.text-body-xl {
-  font-size: var(--fs-body-xl);
-}
-
-.text-body-lg {
-  font-size: var(--fs-body-lg);
-}
-
-.text-body-md {
-  font-size: var(--fs-body-md);
+.font-bold {
+  font-weight: 600;
 }
 
 .uppercase {
