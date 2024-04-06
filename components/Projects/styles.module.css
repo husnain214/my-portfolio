@@ -1,0 +1,15 @@
+.primary-heading {
+  font-size: var(--fs-heading-2);
+}
+
+.subtitle {
+  width: min(392px, 100%);
+}
+
+@media (width > 45em) {
+  .project-grid {
+    --gap: 2rem;
+    --flow-spacing: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  }
+}

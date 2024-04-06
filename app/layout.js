@@ -1,8 +1,6 @@
-import { Inter } from "next/font/google";
 import { Navbar, Footer } from "@/components";
+import { helveticaNeue, sebNeue } from "@/fonts";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,8 +9,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={`${sebNeue.variable} ${helveticaNeue.variable}`}>
+      <body>
         <Navbar />
         {children}
         <Footer />

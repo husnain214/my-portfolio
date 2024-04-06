@@ -7,20 +7,30 @@
   --clr-sussie: #38e1f1;
   --clr-blue-jeans: #0082ff;
 
-  --fs-display-2xl: 227px;
-  --fs-display-xl: 140px;
-  --fs-display: 84px;
-
-  --fs-heading-1: 64px;
-  --fs-heading-2: 48px;
-  --fs-heading-3: 32px;
+  --fs-heading-1: clamp(84px, 10vw, 227px);
+  --fs-heading-2: 28px;
+  --fs-heading-3: 18px;
   --fs-heading-4: 24px;
   --fs-heading-5: 20px;
   --fs-heading-6: 48px;
 
-  --fs-body-xl: 20px;
-  --fs-body-lg: 18px;
-  --fs-body-md: 14px;
+  --fs-body: 16px;
+}
+
+@media (width > 35em) {
+  :root {
+    --fs-heading-2: 35px;
+    --fs-heading-3: 22px;
+    --fs-body: 18px;
+  }
+}
+
+@media (width > 45em) {
+  :root {
+    --fs-heading-2: 48px;
+    --fs-heading-3: 25px;
+    --fs-body: 20px;
+  }
 }
 
 /* https://piccalil.li/blog/a-more-modern-css-reset/ */
@@ -71,22 +81,9 @@ body {
 
   font-family: var(--ff-primary);
   color: var(--clr-primary);
-  font-weight: 500;
+  font-weight: 300;
 }
 
-@media (width > 35em) {
-  body {
-    font-size: var(--fs-body-md);
-    font-weight: 400;
-  }
-}
-
-@media (width > 45em) {
-  body {
-    font-size: var(--fs-body-lg);
-    font-weight: 500;
-  }
-}
 /* Set shorter line heights on headings and interactive elements */
 h1,
 h2,
@@ -113,7 +110,8 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: var(--ff-secondary);
 }
 
 /* A elements that don't have a class get default styles */
@@ -149,15 +147,17 @@ textarea:not([rows]) {
 }
 
 .container {
-  --padding-inline: 2.5rem;
+  --padding-inline: 1.5rem;
+  --padding-block: clamp(20px, 20px + 5vw, 72px);
   --max-width: 76.1875rem;
 
   width: min(var(--max-width), 100% - var(--padding-inline));
+  padding-block: var(--padding-block);
   margin-inline: auto;
 }
 
 .flow > * + * {
-  margin-top: 1rem;
+  margin-top: var(--flow-spacing, 1rem);
 }
 
 .flex {
