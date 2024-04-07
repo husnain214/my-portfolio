@@ -3,10 +3,10 @@ import styles from "./styles.module.css";
 export default function Contact() {
   return (
     <section>
-      <div className="container flow">
+      <div className={`container ${styles["contact-container"]} flow`}>
         <h2 className={`${styles["primary-heading"]}`}>Let&apos;s Talk</h2>
 
-        <div className={`${styles["form-container"]} grid`}>
+        <div className={`${styles["form-container"]}`}>
           <form className="flow" action="">
             <div className="grid">
               <label htmlFor="name">Name:</label>

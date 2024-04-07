@@ -3,7 +3,7 @@
 }
 
 .list-item {
-  padding: 9px 16px;
+  padding: 5px 16px;
 }
 
 .list-item[aria-current="true"] {

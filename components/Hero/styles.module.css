@@ -1,5 +1,6 @@
 .hero-section {
   place-items: center;
+  align-content: center;
 }
 
 .primary-heading {
@@ -14,10 +15,10 @@
 
 .subtitle {
   width: min(471px, 100%);
+  text-align: center;
 }
 
 .cta-btn {
-  padding: 16px 32px;
-  margin-bottom: 2.5rem;
+  padding: 8px 32px;
   flex-shrink: 0;
 }

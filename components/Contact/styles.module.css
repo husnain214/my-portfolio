@@ -1,7 +1,27 @@
+.contact-container {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+  --padding-block: 3rem;
+  padding-inline: var(--padding-block);
+  border-radius: 3.6rem;
+}
+
 .primary-heading {
   font-size: var(--fs-heading-2);
 }
 
 .form-container {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.form-container :is(input, textarea) {
+  border-radius: 5px;
+  background-color: var(--clr-secondary);
+  padding: 7px 10px;
+}
+
+.form-container textarea {
+  resize: none;
 }
