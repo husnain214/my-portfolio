@@ -1,3 +1,10 @@
 .footer-content {
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (width > 45em) {
+  .footer-content {
+    justify-content: space-between;
+  }
 }

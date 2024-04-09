@@ -4,7 +4,8 @@ export default function Footer() {
   return (
     <footer>
       <div
-        className={`container ${styles["footer-content"]} flex justify-between items-center`}
+        className={`container ${styles["footer-content"]} flex items-center`}
+        style={{ "--padding-block": "2rem" }}
       >
         <p>2024&copy; - Made by Husnain Zahid</p>
 
