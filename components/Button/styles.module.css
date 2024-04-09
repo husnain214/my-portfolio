@@ -1,13 +1,15 @@
 .cta-btn {
   position: relative;
 
-  padding: 16px 32px;
+  padding: 14px 32px;
   flex-shrink: 0;
   isolation: isolate;
   overflow: hidden;
 
   background-color: var(--clr-secondary);
   color: var(--clr-neutral-2);
+
+  letter-spacing: 1px;
 
   transition: color 300ms ease-in-out;
 }
