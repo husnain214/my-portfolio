@@ -1,10 +1,8 @@
 .image-container {
-  background-color: var(--clr-primary);
+  background-image: var(--gradient-3);
   padding: 1.3rem 1.3rem 0 1.3rem;
   border-radius: 32px;
-
-  /* aspect-ratio: 16 / 14;
-  max-width: 592px; */
+  overflow: hidden;
 }
 
 .image {
@@ -15,5 +13,5 @@
 }
 
 .heading {
-  font-size: var(--fs-heading-5);
+  font-size: var(--fs-body);
 }

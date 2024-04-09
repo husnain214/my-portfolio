@@ -4,9 +4,16 @@
 
 .subtitle {
   width: min(392px, 100%);
+  margin-inline: auto;
+  text-align: center;
 }
 
 @media (width > 45em) {
+  .subtitle {
+    width: min(392px, 100%);
+    text-align: left;
+  }
+
   .project-grid {
     --gap: 2rem;
     --flow-spacing: 2rem;

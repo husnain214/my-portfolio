@@ -25,12 +25,18 @@
     var(--clr-accent-2) 100%
   );
 
+  --gradient-3: linear-gradient(
+    180deg,
+    var(--clr-secondary) 0%,
+    var(--clr-primary) 100%
+  );
+
   --fs-heading-1: clamp(50px, 8vw, 150px);
   --fs-heading-2: 28px;
-  --fs-heading-3: 18px;
+  /* --fs-heading-3: 18px;
   --fs-heading-4: 24px;
   --fs-heading-5: 20px;
-  --fs-heading-6: 48px;
+  --fs-heading-6: 48px; */
 
   --fs-body: 18px;
 }
@@ -132,6 +138,17 @@ h6 {
   font-size: inherit;
   font-weight: 700;
   font-family: var(--ff-secondary);
+}
+
+@media (width < 45em) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
 }
 
 button {
