@@ -1,8 +1,16 @@
 .image-container {
+  --padding: 1.3rem;
   background-image: var(--gradient-3);
-  padding: 1.3rem 1.3rem 0 1.3rem;
+  padding: var(--padding) var(--padding) 0 var(--padding);
   border-radius: 32px;
   overflow: hidden;
+}
+
+@media (width < 45em) {
+  .image-container {
+    --padding: 0.5rem;
+    border-radius: 16px;
+  }
 }
 
 .image {
