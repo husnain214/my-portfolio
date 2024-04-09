@@ -3,15 +3,15 @@
 }
 
 .subtitle {
-  width: min(392px, 100%);
+  /* width: min(392px, 100%); */
   margin-inline: auto;
   text-align: center;
 }
 
 @media (width > 45em) {
   .subtitle {
-    width: min(392px, 100%);
     text-align: left;
+    margin: 0;
   }
 
   .project-grid {
