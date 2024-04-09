@@ -1,11 +1,29 @@
 :root {
-  --clr-primary: #0a0909;
-  --clr-secondary: #ededed;
-  --clr-accent: #ffffff;
-  --clr-orange: #ed7615;
-  --clr-lavender: #6e3cf5;
-  --clr-sussie: #38e1f1;
-  --clr-blue-jeans: #0082ff;
+  --clr-primary: #8c00e4;
+  --clr-secondary: #f53c80;
+
+  --clr-accent-1: hsl(319, 82%, 52%, 30%);
+  --clr-accent-2: hsl(277, 100%, 45%, 20%);
+
+  --clr-neutral-1: #1c002f;
+  --clr-neutral-2: #f4eafb;
+
+  --gradient-1: linear-gradient(
+    90deg,
+    var(--clr-primary) 0%,
+    var(--clr-secondary) 100%
+  );
+  --gradient-1: linear-gradient(
+    90deg,
+    var(--clr-primary) 0%,
+    var(--clr-secondary) 100%
+  );
+
+  --gradient-2: linear-gradient(
+    90deg,
+    var(--clr-accent-1) 0%,
+    var(--clr-accent-2) 100%
+  );
 
   --fs-heading-1: clamp(50px, 8vw, 150px);
   --fs-heading-2: 28px;
@@ -14,7 +32,7 @@
   --fs-heading-5: 20px;
   --fs-heading-6: 48px;
 
-  --fs-body: 16px;
+  --fs-body: 18px;
 }
 
 @media (width > 35em) {
@@ -76,19 +94,14 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   display: grid;
-  padding-block: 32px;
+  padding-block: clamp(10px, 3vw, 32px);
   font-size: var(--fs-body);
 
   font-family: var(--ff-primary);
-  color: var(--clr-primary);
+  color: var(--clr-neutral-1);
   font-weight: 300;
 
-  background: rgb(234, 162, 183);
-  background: linear-gradient(
-    90deg,
-    rgba(179, 200, 241, 1) 0%,
-    rgba(234, 162, 183, 1) 100%
-  );
+  background: var(--clr-neutral-2);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -119,6 +132,12 @@ h6 {
   font-size: inherit;
   font-weight: 700;
   font-family: var(--ff-secondary);
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /* A elements that don't have a class get default styles */
@@ -185,7 +204,7 @@ textarea:not([rows]) {
   gap: var(--gap, 1rem);
 }
 
-.grid-center {
+.place-center {
   place-items: center;
 }
 

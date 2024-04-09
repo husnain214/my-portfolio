@@ -1,9 +1,10 @@
 .contact-container {
-  background-color: var(--clr-primary);
-  color: var(--clr-secondary);
+  background-color: var(--clr-accent-2);
+  color: var(--clr-neutral-1);
   --padding-block: 3rem;
   padding-inline: var(--padding-block);
   border-radius: 3.6rem;
+  background-image: var(--gradient-2);
 }
 
 .primary-heading {
@@ -18,8 +19,15 @@
 
 .form-container :is(input, textarea) {
   border-radius: 5px;
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-neutral-2);
   padding: 7px 10px;
+  border: 2px solid transparent;
+  outline: 0;
+  transition: border-color 200ms ease-in-out;
+}
+
+.form-container :is(input, textarea):focus-visible {
+  border-color: var(--clr-primary);
 }
 
 .form-container textarea {

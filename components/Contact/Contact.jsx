@@ -1,3 +1,4 @@
+import { Button } from "..";
 import styles from "./styles.module.css";
 
 export default function Contact() {
@@ -27,6 +28,8 @@ export default function Contact() {
                 rows="10"
               ></textarea>
             </div>
+
+            <Button>Send Message</Button>
           </form>
 
           <div>

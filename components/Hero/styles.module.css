@@ -7,6 +7,9 @@
   font-size: var(--fs-heading-1);
   text-align: center;
   font-weight: 600;
+  background-image: var(--gradient-1);
+  background-clip: text;
+  color: transparent;
 }
 
 .secondary-heading {
@@ -16,9 +19,4 @@
 .subtitle {
   width: min(471px, 100%);
   text-align: center;
-}
-
-.cta-btn {
-  padding: 8px 32px;
-  flex-shrink: 0;
 }
