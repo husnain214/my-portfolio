@@ -193,13 +193,15 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+section {
+  margin-top: 3rem;
+}
+
 .container {
   --padding-inline: 1.5rem;
-  --padding-block: 4rem;
   --max-width: 76.1875rem;
 
   width: min(var(--max-width), 100% - var(--padding-inline));
-  padding-block: var(--padding-block);
   margin-inline: auto;
 }
 

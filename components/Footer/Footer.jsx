@@ -5,7 +5,6 @@ export default function Footer() {
     <footer>
       <div
         className={`container ${styles["footer-content"]} flex items-center`}
-        style={{ "--padding-block": "2rem" }}
       >
         <p>2024&copy; - Made by Husnain Zahid</p>
 

@@ -1,6 +1,7 @@
 .footer-content {
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 @media (width > 45em) {
