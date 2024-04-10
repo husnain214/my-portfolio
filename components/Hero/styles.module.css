@@ -1,7 +1,7 @@
 .hero-section {
   place-items: center;
   align-content: center;
-  min-height: calc(90dvh - 5rem);
+  min-height: calc(90vh - 10rem);
   font-size: 20px;
 }
 
