@@ -14,11 +14,8 @@
   --padding: 0;
 }
 
-@media (width < 45em) {
-  .image-container {
-    --padding: 0.5rem;
-    border-radius: 16px;
-  }
+.heading {
+  font-size: var(--fs-heading-3);
 }
 
 .image {
@@ -26,14 +23,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
-}
-
-.card-content {
-  font-size: 1.2rem;
-}
-
-.heading {
-  font-size: var(--fs-body);
 }
 
 .card-tags {
@@ -48,5 +37,15 @@
   color: var(--clr-neutral-2);
   border-radius: 100vmax;
   padding: 2px 15px;
-  font-size: 1rem;
+}
+
+@media (width < 45em) {
+  .image-container {
+    --padding: 0.5rem;
+    border-radius: 16px;
+  }
+
+  .card-content {
+    text-align: center;
+  }
 }
