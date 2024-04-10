@@ -38,7 +38,7 @@
   --fs-heading-5: 20px;
   --fs-heading-6: 48px; */
 
-  --fs-body: 20px;
+  --fs-body: 16px;
 }
 
 @media (width > 35em) {
