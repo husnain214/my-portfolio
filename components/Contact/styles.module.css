@@ -1,15 +1,14 @@
 .contact-container {
   background-color: var(--clr-accent-2);
   color: var(--clr-neutral-1);
-  padding-inline: var(--padding-block);
+  padding: var(--padding-block);
   border-radius: 3.6rem;
   background-image: var(--gradient-2);
 }
 
 @media (width < 45em) {
   .contact-container {
-    padding-inline: 1rem;
-    --padding-block: 1rem !important;
+    padding: 2rem 1rem;
     border-radius: 1rem;
   }
 }

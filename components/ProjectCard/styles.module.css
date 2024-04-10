@@ -48,4 +48,8 @@
   .card-content {
     text-align: center;
   }
+
+  .card-tags {
+    justify-content: center;
+  }
 }
