@@ -21,6 +21,7 @@
 .form-container {
   display: grid;
   gap: 3rem;
+  align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 }
 
@@ -39,4 +40,21 @@
 
 .form-container textarea {
   resize: none;
+}
+
+.icon {
+  background-color: var(--clr-neutral-1);
+  color: var(--clr-neutral-2);
+  border-radius: 100vmax;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  aspect-ratio: 1;
+}
+
+@media (width < 45em) {
+  .icon svg {
+    width: 18px;
+    height: 18px;
+  }
 }

@@ -1,4 +1,4 @@
-import { Button } from "..";
+import { AtSymbolIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import styles from "./styles.module.css";
 
 export default function Contact() {
@@ -29,20 +29,32 @@ export default function Contact() {
               ></textarea>
             </div>
 
-            <Button>Send Message</Button>
+            <button
+              className="cta-btn flex items-center rounded-full font-bold"
+              type="submit"
+            >
+              Send Message
+            </button>
           </form>
 
-          <div>
-            <div>
-              <div></div>
-              <a href="tel:+923054775266">+92 305 4775266</a>
-            </div>
-
-            <div>
-              <div></div>
+          <div className="flow">
+            <div className="flex items-center">
+              <div className={styles["icon"]}>
+                {" "}
+                <AtSymbolIcon height={24} width={24} />
+              </div>
               <a href="mailto:husnainzahid214@gmail.com">
                 husnainzahid214@gmail.com
               </a>
+            </div>
+
+            <div className="flex items-center">
+              <div className={styles["icon"]}>
+                {" "}
+                <PhoneIcon height={24} width={24} />
+              </div>
+
+              <a href="tel:+923054775266">+92 305 4775266</a>
             </div>
           </div>
         </div>

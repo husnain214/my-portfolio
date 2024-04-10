@@ -1,4 +1,5 @@
 import { ProjectCard } from "..";
+import { projects } from "@/constants";
 import styles from "./styles.module.css";
 
 export default function Projects() {
@@ -14,10 +15,15 @@ export default function Projects() {
         </p>
 
         <div className={`${styles["project-grid"]} grid`}>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              thumbnail={project.thumbnail}
+              tags={project.tags}
+            />
+          ))}
         </div>
       </div>
     </section>

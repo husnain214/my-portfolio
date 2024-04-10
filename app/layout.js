@@ -1,5 +1,5 @@
 import { Navbar, Footer } from "@/components";
-import { helveticaNeue, sebNeue } from "@/fonts";
+import { helveticaNeue, sebNeue } from "@/assets/fonts";
 import "./globals.css";
 
 export const metadata = {

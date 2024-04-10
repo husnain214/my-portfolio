@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Hamburger from "hamburger-react";
 import styles from "./styles.module.css";
+import { Logo } from "@/assets/images";
+import Image from "next/image";
 
 export default function Navbar() {
   const [navVisible, setNavVisible] = useState(false);
@@ -10,10 +12,10 @@ export default function Navbar() {
     <header>
       <div
         className="container grid place-center"
-        style={{ "--padding-block": 0 }}
+        style={{ "--padding-block": 0, "--gap": "1.5rem" }}
       >
         <div className={styles["brand-container"]} data-expanded={navVisible}>
-          <div>Logo</div>
+          <Image src={Logo} width={150} />
 
           <div className={styles["hamburger-btn"]}>
             <Hamburger
