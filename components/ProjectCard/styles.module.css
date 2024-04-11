@@ -10,10 +10,6 @@
   transition: all 300ms ease-in-out;
 }
 
-.image-container:hover {
-  --padding: 0;
-}
-
 .heading {
   font-size: var(--fs-heading-3);
 }
@@ -23,6 +19,11 @@
   height: 100%;
   object-fit: cover;
   border-radius: 12px 12px 0 0;
+  transition: transform 400ms ease-in-out;
+}
+
+.image-container:hover .image {
+  transform: scale(1.2);
 }
 
 .card-tags {
