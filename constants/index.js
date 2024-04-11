@@ -1,4 +1,13 @@
-import { EntertainmentThumbnail, InvoiceThumbnail } from "@/assets/images";
+import {
+  EntertainmentThumbnail,
+  InvoiceThumbnail,
+  MongodbIcon,
+  NextIcon,
+  NodeIcon,
+  PrismaIcon,
+  ReactIcon,
+  TailwindcssIcon,
+} from "@/assets/images";
 
 export const projects = [
   {
@@ -32,5 +41,32 @@ export const projects = [
       "React",
       "React",
     ],
+  },
+];
+
+export const skills = [
+  {
+    title: "React",
+    symbol: ReactIcon,
+  },
+  {
+    title: "Node",
+    symbol: NodeIcon,
+  },
+  {
+    title: "MongoDB",
+    symbol: MongodbIcon,
+  },
+  {
+    title: "Prisma",
+    symbol: PrismaIcon,
+  },
+  {
+    title: "Next",
+    symbol: NextIcon,
+  },
+  {
+    title: "TailwindCSS",
+    symbol: TailwindcssIcon,
   },
 ];

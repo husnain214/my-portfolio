@@ -30,14 +30,36 @@ export default function Navbar() {
         <nav className={`${styles.navigation}`} data-visible={navVisible}>
           <ul role="list">
             <li
+              onClick={() => setNavVisible(false)}
+              aria-current="true"
               className={`${styles["list-item"]} rounded-full`}
-              aria-current={true}
             >
-              Home
+              <a href="#home">Home</a>
             </li>
-            <li className={`${styles["list-item"]} rounded-full`}>Projects</li>
-            <li className={`${styles["list-item"]} rounded-full`}>About</li>
-            <li className={`${styles["list-item"]} rounded-full`}>Contact</li>
+            <li
+              onClick={() => setNavVisible(false)}
+              className={`${styles["list-item"]} rounded-full`}
+            >
+              <a href="#services">Services</a>
+            </li>
+            <li
+              onClick={() => setNavVisible(false)}
+              className={`${styles["list-item"]} rounded-full`}
+            >
+              <a href="#projects">Projects</a>
+            </li>
+            <li
+              onClick={() => setNavVisible(false)}
+              className={`${styles["list-item"]} rounded-full`}
+            >
+              <a href="#skills">Skills</a>
+            </li>
+            <li
+              onClick={() => setNavVisible(false)}
+              className={`${styles["list-item"]} rounded-full`}
+            >
+              <a href="#contact">Contact Me</a>
+            </li>
           </ul>
         </nav>
       </div>

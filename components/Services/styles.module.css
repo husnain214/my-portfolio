@@ -1,0 +1,35 @@
+.primary-heading {
+  font-size: var(--fs-heading-2);
+}
+
+.services-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services-grid li {
+  background-image: var(--gradient-1);
+  padding: 4px;
+  border-radius: 20px;
+  color: var(--clr-neutral-2);
+}
+
+.services-grid article {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--clr-neutral-1);
+  border-radius: 16px;
+  padding: 2rem 1rem;
+}
+
+@media (width < 45em) {
+  .services-grid {
+    flex-direction: column;
+  }
+}

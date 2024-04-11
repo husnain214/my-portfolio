@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects">
       <div className="container flow">
         <h2 className={`${styles["primary-heading"]}`}>Projects</h2>
 

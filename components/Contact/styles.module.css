@@ -1,9 +1,8 @@
 .contact-container {
-  background-color: var(--clr-accent-2);
+  background-image: var(--gradient-2);
   color: var(--clr-neutral-1);
   padding: 4rem;
   border-radius: 3.6rem;
-  background-image: var(--gradient-2);
 }
 
 @media (width < 45em) {

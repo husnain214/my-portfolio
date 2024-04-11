@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 export default function Hero() {
   return (
-    <section>
+    <section id="home">
       <div className="container" style={{ "--padding-block": "2rem" }}>
         <div className={`${styles["hero-section"]} grid`}>
           <h1 className={styles["primary-heading"]}>Husnain Zahid</h1>

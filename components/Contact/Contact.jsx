@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 export default function Contact() {
   return (
-    <section>
+    <section id="contact">
       <div className="container">
         <div className={`${styles["contact-container"]} flow`}>
           <h2 className={`${styles["primary-heading"]}`}>Let&apos;s Talk</h2>
