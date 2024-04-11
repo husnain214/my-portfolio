@@ -4,8 +4,8 @@
   padding: var(--padding) var(--padding) 0 var(--padding);
   margin-bottom: 2rem;
   border-radius: 32px;
+  height: 400px;
   overflow: hidden;
-  max-height: 367px;
 
   transition: all 300ms ease-in-out;
 }
@@ -43,6 +43,7 @@
   .image-container {
     --padding: 0.5rem;
     border-radius: 16px;
+    height: auto;
   }
 
   .card-content {

@@ -8,8 +8,8 @@ export default function Services() {
       <div className="container flow">
         <h2 className={styles["primary-heading"]}>Services</h2>
         <p>
-          We put your ideas and thus your wishes in the form of a unique web
-          project that inspires you and you customers.
+          From pixel-perfect frontends to robust backends, I tailor our services
+          to exceed your expectations and elevate your online presence.
         </p>
 
         <ul className={styles["services-grid"]}>

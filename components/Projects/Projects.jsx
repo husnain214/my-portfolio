@@ -9,9 +9,7 @@ export default function Projects() {
         <h2 className={`${styles["primary-heading"]}`}>Projects</h2>
 
         <p className={styles.subtitle}>
-          As a seasoned creator of contemporary, user-friendly web designs and
-          digital solutions, I aim to assist you in constructing the brand of
-          your fantasies.
+          From Concept to Completion. Here are my featured projects:
         </p>
 
         <div className={`${styles["project-grid"]} grid`}>
