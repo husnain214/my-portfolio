@@ -1,7 +1,16 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
-export default function ProjectCard({ title, description, thumbnail, tags }) {
+export default function ProjectCard({
+  title,
+  description,
+  thumbnail,
+  tags,
+  demo,
+  repo,
+}) {
   return (
     <article className={`${styles.card} flow`}>
       <div className={`${styles["image-container"]}`}>
@@ -19,6 +28,28 @@ export default function ProjectCard({ title, description, thumbnail, tags }) {
       >
         <h3 className={styles.heading}>{title}</h3>
         <p className={styles["card-subtitle"]}>{description}</p>
+
+        <div className="flex items-center">
+          <Link
+            href={demo}
+            target="_blank"
+            className={`${styles["project-link"]} flex rounded-full font-bold`}
+            style={{ "--gap": "0.5rem" }}
+          >
+            Live Demo
+            <ArrowTopRightOnSquareIcon height={24} width={24} />
+          </Link>
+
+          <Link
+            href={repo}
+            target="_blank"
+            className={`${styles["project-link"]} flex rounded-full font-bold`}
+            style={{ "--gap": "0.5rem" }}
+          >
+            Source Code
+            <ArrowTopRightOnSquareIcon height={24} width={24} />
+          </Link>
+        </div>
 
         <ul role="list" className={styles["card-tags"]}>
           {tags.map((tag, index) => (

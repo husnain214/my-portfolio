@@ -1,8 +1,11 @@
-import { DynamicIcon, ServerIcon, StaticIcon } from "@/assets/images";
+"use client";
+
 import Image from "next/image";
 import styles from "./styles.module.css";
 import { services } from "@/constants";
 import { Heading } from "..";
+import { useContext } from "react";
+import { IntersectionContext } from "@/providers/IntersectionProvider";
 
 export default function Services() {
   return (

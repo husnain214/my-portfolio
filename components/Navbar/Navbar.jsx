@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Hamburger from "hamburger-react";
 import styles from "./styles.module.css";
 import { Logo } from "@/assets/images";
@@ -8,10 +8,27 @@ import Image from "next/image";
 
 export default function Navbar() {
   const [navVisible, setNavVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const listener = window.addEventListener("scroll", () => {
+      console.log(window.scrollY);
+      if (window.scrollY > 5) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    });
+
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={`${styles.header}`} data-scrolled={scrolled}>
       <div
-        className="container grid place-center"
+        className="container flex items-center justify-between"
         style={{ "--padding-block": 0, "--gap": "1.5rem" }}
       >
         <div className={styles["brand-container"]} data-expanded={navVisible}>

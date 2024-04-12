@@ -18,6 +18,7 @@ export default function Hero() {
           <Link
             href="/docs/Husnain_Zahid_Resume.pdf"
             download
+            target="_blank"
             className="cta-btn flex items-center rounded-full font-bold"
           >
             My Resume

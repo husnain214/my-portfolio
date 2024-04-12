@@ -43,6 +43,7 @@
   .hero-section::before {
     top: 40vh;
   }
+
   .hero-section::after {
     bottom: 40vh;
   }

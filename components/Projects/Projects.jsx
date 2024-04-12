@@ -14,13 +14,7 @@ export default function Projects() {
 
         <div className={`${styles["project-grid"]} grid`}>
           {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              description={project.description}
-              thumbnail={project.thumbnail}
-              tags={project.tags}
-            />
+            <ProjectCard key={index} {...project} />
           ))}
         </div>
       </div>
