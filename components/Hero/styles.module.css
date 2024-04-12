@@ -10,45 +10,41 @@
   content: "";
   position: absolute;
   aspect-ratio: 1;
-  width: clamp(50px, 50vw, 400px);
+  width: clamp(50px, 50vw, 300px);
   border-radius: 100vmax;
-  filter: blur(15rem);
+  filter: blur(10rem);
   z-index: -1;
+  animation: sizing 3s 1s infinite forwards ease-in-out;
 }
 
 .hero-section::before {
   background-color: var(--clr-secondary);
-  animation: before 3s linear infinite;
   top: 0;
   left: 0;
 }
 
-@keyframes before {
-  0%,
-  100% {
-    background-color: var(--clr-secondary);
-  }
-  50% {
-    background-color: var(--clr-primary);
-    scale: 0.5;
-  }
-}
-
 .hero-section::after {
-  animation: after 3s linear infinite;
   background-color: var(--clr-primary);
   bottom: 0;
   right: 0;
 }
 
-@keyframes after {
+@keyframes sizing {
   0%,
   100% {
-    background-color: var(--clr-primary);
+    scale: 1;
   }
   50% {
-    background-color: var(--clr-secondary);
     scale: 0.5;
+  }
+}
+
+@media (width < 45em) {
+  .hero-section::before {
+    top: 40vh;
+  }
+  .hero-section::after {
+    bottom: 40vh;
   }
 }
 
