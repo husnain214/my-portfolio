@@ -16,7 +16,8 @@ export default function Hero() {
             functionality.
           </p>
           <Link
-            href=""
+            href="/docs/Husnain_Zahid_Resume.pdf"
+            download
             className="cta-btn flex items-center rounded-full font-bold"
           >
             My Resume

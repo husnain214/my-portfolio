@@ -1,7 +1,3 @@
-.primary-heading {
-  font-size: var(--fs-heading-2);
-}
-
 .skills-grid ul {
   display: flex;
   flex-wrap: wrap;

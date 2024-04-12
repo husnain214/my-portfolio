@@ -12,10 +12,6 @@
   }
 }
 
-.primary-heading {
-  font-size: var(--fs-heading-2);
-}
-
 .form-container {
   display: grid;
   gap: 3rem;

@@ -6,8 +6,32 @@ import {
   NodeIcon,
   PrismaIcon,
   ReactIcon,
+  ServerIcon,
+  StaticIcon,
+  DynamicIcon,
   TailwindcssIcon,
 } from "@/assets/images";
+
+export const services = [
+  {
+    title: "Static Web Development",
+    icon: StaticIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore itaque repellat consequuntur voluptatem qui",
+  },
+  {
+    title: "Dynamic Frontend Development",
+    icon: DynamicIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore itaque repellat consequuntur voluptatem qui",
+  },
+  {
+    title: "Backend Development",
+    icon: ServerIcon,
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore itaque repellat consequuntur voluptatem qui",
+  },
+];
 
 export const projects = [
   {

@@ -5,6 +5,53 @@
   font-size: 20px;
 }
 
+.hero-section::before,
+.hero-section::after {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1;
+  width: clamp(50px, 50vw, 400px);
+  border-radius: 100vmax;
+  filter: blur(15rem);
+  z-index: -1;
+}
+
+.hero-section::before {
+  background-color: var(--clr-secondary);
+  animation: before 3s linear infinite;
+  top: 0;
+  left: 0;
+}
+
+@keyframes before {
+  0%,
+  100% {
+    background-color: var(--clr-secondary);
+  }
+  50% {
+    background-color: var(--clr-primary);
+    scale: 0.5;
+  }
+}
+
+.hero-section::after {
+  animation: after 3s linear infinite;
+  background-color: var(--clr-primary);
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes after {
+  0%,
+  100% {
+    background-color: var(--clr-primary);
+  }
+  50% {
+    background-color: var(--clr-secondary);
+    scale: 0.5;
+  }
+}
+
 .primary-heading {
   font-size: var(--fs-heading-1);
   text-align: center;

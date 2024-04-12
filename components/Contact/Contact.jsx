@@ -1,12 +1,13 @@
 import { AtSymbolIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import styles from "./styles.module.css";
+import { Heading } from "..";
 
 export default function Contact() {
   return (
     <section id="contact">
       <div className="container">
         <div className={`${styles["contact-container"]} flow`}>
-          <h2 className={`${styles["primary-heading"]}`}>Let&apos;s Talk</h2>
+          <Heading content={`Let's Talk`} />
 
           <div className={`${styles["form-container"]}`}>
             <form className="flow" action="">

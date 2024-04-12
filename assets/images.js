@@ -7,6 +7,9 @@ import NodeIcon from "@/public/assets/images/nodejs.svg";
 import PrismaIcon from "@/public/assets/images/prisma.svg";
 import TailwindcssIcon from "@/public/assets/images/tailwindcss.svg";
 import NextIcon from "@/public/assets/images/nextjs.svg";
+import DynamicIcon from "@/public/assets/images/dynamic.svg";
+import StaticIcon from "@/public/assets/images/static.svg";
+import ServerIcon from "@/public/assets/images/server.svg";
 
 export {
   Logo,
@@ -18,4 +21,7 @@ export {
   PrismaIcon,
   TailwindcssIcon,
   NextIcon,
+  DynamicIcon,
+  StaticIcon,
+  ServerIcon,
 };

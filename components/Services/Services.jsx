@@ -1,48 +1,35 @@
-import { ReactIcon } from "@/assets/images";
+import { DynamicIcon, ServerIcon, StaticIcon } from "@/assets/images";
 import Image from "next/image";
 import styles from "./styles.module.css";
+import { services } from "@/constants";
+import { Heading } from "..";
 
 export default function Services() {
   return (
     <section id="services">
       <div className="container flow">
-        <h2 className={styles["primary-heading"]}>Services</h2>
+        <Heading content="Services" />
+
         <p>
           From pixel-perfect frontends to robust backends, I tailor our services
           to exceed your expectations and elevate your online presence.
         </p>
 
         <ul className={styles["services-grid"]}>
-          <li>
-            <article className="flow">
-              <Image src={ReactIcon} />
-              <h3>Responsive Web Design</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae dolore itaque repellat consequuntur voluptatem qui
-              </p>
-            </article>
-          </li>
-          <li>
-            <article className="flow">
-              <Image src={ReactIcon} />
-              <h3>Frontend Development</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae dolore itaque repellat consequuntur voluptatem qui
-              </p>
-            </article>
-          </li>
-          <li>
-            <article className="flow">
-              <Image src={ReactIcon} />
-              <h3>Backend Development</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae dolore itaque repellat consequuntur voluptatem qui
-              </p>
-            </article>
-          </li>
+          {services.map((service, index) => (
+            <li key={service.title + index}>
+              <article className="flow">
+                <Image
+                  height={50}
+                  width={50}
+                  src={service.icon}
+                  alt={service.title}
+                />
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </article>
+            </li>
+          ))}
         </ul>
       </div>
     </section>
