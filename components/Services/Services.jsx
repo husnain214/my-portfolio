@@ -12,7 +12,7 @@ export default function Services() {
         <Heading content="Services" />
 
         <p>
-          From pixel-perfect frontends to robust backends, I tailor our services
+          From pixel-perfect frontends to robust backends, I tailor my services
           to exceed your expectations and elevate your online presence.
         </p>
 

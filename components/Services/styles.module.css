@@ -2,13 +2,14 @@
   display: flex;
   gap: 1rem;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
 }
 
 .services-grid li {
   background-image: var(--gradient-1);
   padding: 4px;
   border-radius: 20px;
+  flex: 1;
   color: var(--clr-neutral-2);
 }
 
@@ -22,6 +23,7 @@
   background-color: var(--clr-neutral-1);
   border-radius: 16px;
   padding: 2rem 1rem;
+  height: 100%;
 }
 
 @media (width < 45em) {

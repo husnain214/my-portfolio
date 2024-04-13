@@ -12,7 +12,7 @@ export default function ProjectCard({
   repo,
 }) {
   return (
-    <article className={`${styles.card} flow`}>
+    <article className={`${styles.card}`}>
       <div className={`${styles["image-container"]}`}>
         <Image
           className={`${styles.image}`}
@@ -29,7 +29,7 @@ export default function ProjectCard({
         <h3 className={styles.heading}>{title}</h3>
         <p className={styles["card-subtitle"]}>{description}</p>
 
-        <div className="flex items-center">
+        <div className={`flex items-center ${styles["project-links-wrapper"]}`}>
           <Link
             href={demo}
             target="_blank"

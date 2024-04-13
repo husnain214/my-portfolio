@@ -45,19 +45,19 @@ export const services = [
     title: "Static Web Development",
     icon: StaticIcon,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore itaque repellat consequuntur voluptatem qui",
+      "Set your story in stone with my static website designs. Perfect for timeless content that stays consistent over time, ensuring your message remains crystal clear.",
   },
   {
     title: "Dynamic Frontend Development",
     icon: DynamicIcon,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore itaque repellat consequuntur voluptatem qui",
+      "Bring your website to life with dynamic frontend designs. With engaging features and interactive elements, I create a virtual space that evolves alongside your audience, sparking curiosity and interaction.",
   },
   {
     title: "Backend Development",
     icon: ServerIcon,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore itaque repellat consequuntur voluptatem qui",
+      "Power your ambitions with my backend solutions. Behind the scenes, I ensure everything runs smoothly, from managing your data to handling transactions, so you can focus on growing your business without worry.",
   },
 ];
 
@@ -66,7 +66,7 @@ export const projects = [
     thumbnail: EntertainmentThumbnail,
     title: "Entertainment App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sed quisquam esse provident quaerat odit at accusantium? Similique doloribus quaerat deserunt magni natus repudiandae neque, perspiciatis, nesciunt sapiente nobis odio!",
+      "A web app that allows users to signup and login to watch their favorite movies and shows. They can also bookmark them.",
     tags: [
       "React",
       "Node",
@@ -84,7 +84,7 @@ export const projects = [
     thumbnail: InvoiceThumbnail,
     title: "Invoice App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sed quisquam esse provident quaerat odit at accusantium? Similique doloribus quaerat deserunt magni natus repudiandae neque, perspiciatis, nesciunt sapiente nobis odio!",
+      "An app that allows users to create, update, and delete their invoices. They can filter invoices according to the status of invoices. They can also toggle between dark mode and light mode.",
     tags: [
       "React",
       "Node",

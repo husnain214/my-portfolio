@@ -1,21 +1,15 @@
+.project-grid {
+  gap: 2rem;
+}
+
 .subtitle {
   margin-inline: auto;
   text-align: center;
-}
-
-.project-grid {
-  --gap: 4rem;
-  --flow-spacing: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
 }
 
 @media (width > 45em) {
   .subtitle {
     text-align: left;
     margin: 0;
-  }
-
-  .project-grid {
-    --gap: 2rem;
   }
 }
