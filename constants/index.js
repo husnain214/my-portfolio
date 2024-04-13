@@ -12,6 +12,34 @@ import {
   TailwindcssIcon,
 } from "@/assets/images";
 
+export const navLinks = [
+  {
+    id: "home",
+    label: "Home",
+    href: "#home",
+  },
+  {
+    id: "services",
+    label: "Services",
+    href: "#services",
+  },
+  {
+    id: "projects",
+    label: "Projects",
+    href: "#projects",
+  },
+  {
+    id: "skills",
+    label: "Skills",
+    href: "#skills",
+  },
+  {
+    id: "contact-me",
+    label: "Contact Me",
+    href: "#contact",
+  },
+];
+
 export const services = [
   {
     title: "Static Web Development",

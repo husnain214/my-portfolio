@@ -5,9 +5,13 @@ import Hamburger from "hamburger-react";
 import styles from "./styles.module.css";
 import { Logo } from "@/assets/images";
 import Image from "next/image";
+import { navLinks } from "@/constants";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Navbar() {
   const [navVisible, setNavVisible] = useState(false);
+  const [active, setActive] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -46,37 +50,26 @@ export default function Navbar() {
 
         <nav className={`${styles.navigation}`} data-visible={navVisible}>
           <ul role="list">
-            <li
-              onClick={() => setNavVisible(false)}
-              aria-current="true"
-              className={`${styles["list-item"]} rounded-full`}
-            >
-              <a href="#home">Home</a>
-            </li>
-            <li
-              onClick={() => setNavVisible(false)}
-              className={`${styles["list-item"]} rounded-full`}
-            >
-              <a href="#services">Services</a>
-            </li>
-            <li
-              onClick={() => setNavVisible(false)}
-              className={`${styles["list-item"]} rounded-full`}
-            >
-              <a href="#projects">Projects</a>
-            </li>
-            <li
-              onClick={() => setNavVisible(false)}
-              className={`${styles["list-item"]} rounded-full`}
-            >
-              <a href="#skills">Skills</a>
-            </li>
-            <li
-              onClick={() => setNavVisible(false)}
-              className={`${styles["list-item"]} rounded-full`}
-            >
-              <a href="#contact">Contact Me</a>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.id} className={`${styles["list-item"]}`}>
+                <Link
+                  href={link.href}
+                  onClick={() => {
+                    setActive(link.id);
+                    setNavVisible(false);
+                  }}
+                >
+                  {link.label}
+
+                  {active === link.id && (
+                    <motion.div
+                      layoutId="active-pill"
+                      className={styles["current-tab"]}
+                    />
+                  )}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
