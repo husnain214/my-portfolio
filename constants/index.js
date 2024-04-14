@@ -10,6 +10,8 @@ import {
   StaticIcon,
   DynamicIcon,
   TailwindcssIcon,
+  lowResInvoiceThumbnail,
+  lowResEntertainmentThumbnail,
 } from "@/assets/images";
 
 export const navLinks = [
@@ -63,7 +65,10 @@ export const services = [
 
 export const projects = [
   {
-    thumbnail: EntertainmentThumbnail,
+    thumbnail: {
+      regular: EntertainmentThumbnail,
+      lowRes: lowResEntertainmentThumbnail,
+    },
     title: "Entertainment App",
     description:
       "A web app that allows users to signup and login to watch their favorite movies and shows. They can also bookmark them.",
@@ -81,7 +86,10 @@ export const projects = [
     repo: "https://github.com/husnain214/entertainment-web-app",
   },
   {
-    thumbnail: InvoiceThumbnail,
+    thumbnail: {
+      regular: InvoiceThumbnail,
+      lowRes: lowResInvoiceThumbnail,
+    },
     title: "Invoice App",
     description:
       "An app that allows users to create, update, and delete their invoices. They can filter invoices according to the status of invoices. They can also toggle between dark mode and light mode.",

@@ -4,34 +4,6 @@
   gap: 2rem;
 }
 
-.image-container {
-  --padding: 1.3rem;
-  background-image: var(--gradient-3);
-  padding: var(--padding) var(--padding) 0 var(--padding);
-  margin-bottom: 2rem;
-  border-radius: 32px;
-  overflow: hidden;
-  max-width: 500px;
-
-  transition: all 300ms ease-in-out;
-}
-
-.heading {
-  font-size: var(--fs-heading-3);
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-  transition: transform 400ms ease-in-out;
-}
-
-.image-container:hover .image {
-  transform: scale(1.2);
-}
-
 .card-content {
   flex-shrink: 1;
 }

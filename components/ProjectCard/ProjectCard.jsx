@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { ProjectThumbnail } from "..";
 
 export default function ProjectCard({
   title,
@@ -13,14 +14,7 @@ export default function ProjectCard({
 }) {
   return (
     <article className={`${styles.card}`}>
-      <div className={`${styles["image-container"]}`}>
-        <Image
-          className={`${styles.image}`}
-          width="500"
-          alt=""
-          src={thumbnail}
-        />
-      </div>
+      <ProjectThumbnail thumbnail={thumbnail} />
 
       <div
         className={`${styles["card-content"]} flow`}

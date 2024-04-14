@@ -1,0 +1,56 @@
+.image-container {
+  --padding: 1.3rem;
+  background-image: var(--gradient-3);
+  padding: var(--padding) var(--padding) 0 var(--padding);
+  margin-bottom: 2rem;
+  border-radius: 32px;
+  overflow: hidden;
+  max-width: 500px;
+
+  transition: all 300ms ease-in-out;
+}
+
+.blur-load {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+
+  display: grid;
+}
+
+.blur-load > * {
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+
+.blur-image {
+  filter: blur(5px);
+  z-index: 1;
+  animation: blurLoad 2s infinite;
+}
+
+@keyframes blurLoad {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.heading {
+  font-size: var(--fs-heading-3);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-in-out;
+}
+
+.image-container:hover .image {
+  transform: scale(1.2);
+}
