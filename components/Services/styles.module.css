@@ -17,7 +17,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   background-color: var(--clr-neutral-1);

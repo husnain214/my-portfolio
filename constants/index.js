@@ -47,19 +47,19 @@ export const services = [
     title: "Static Web Development",
     icon: StaticIcon,
     description:
-      "Set your story in stone with my static website designs. Perfect for timeless content that stays consistent over time, ensuring your message remains crystal clear.",
+      "I create visually stunning websites that captivate and leave a lasting impression. With meticulous design and intuitive navigation, I craft user-friendly web experiences that effectively convey your brand's message and elevate your online presence.",
   },
   {
-    title: "Dynamic Frontend Development",
+    title: "Frontend Development",
     icon: DynamicIcon,
     description:
-      "Bring your website to life with dynamic frontend designs. With engaging features and interactive elements, I create a virtual space that evolves alongside your audience, sparking curiosity and interaction.",
+      "I pride myself on crafting advanced frontend applications that take user experiences to the next level. My expertise in modern frameworks and technologies ensures that I deliver aesthetically superior and highly responsive web solutions.",
   },
   {
     title: "Backend Development",
     icon: ServerIcon,
     description:
-      "Power your ambitions with my backend solutions. Behind the scenes, I ensure everything runs smoothly, from managing your data to handling transactions, so you can focus on growing your business without worry.",
+      "My mission is to develop powerful and scalable backend systems that provide the foundation for dynamic and seamless web applications. I specialize in creating efficient and secure systems that support your business goals.",
   },
 ];
 
@@ -71,7 +71,7 @@ export const projects = [
     },
     title: "Entertainment App",
     description:
-      "A web app that allows users to signup and login to watch their favorite movies and shows. They can also bookmark them.",
+      "A web app that allows users to signup and login to watch their favorite movies and shows. They can bookmark them for later too.",
     tags: [
       "React",
       "Node",

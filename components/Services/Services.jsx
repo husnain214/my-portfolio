@@ -16,7 +16,7 @@ export default function Services() {
           to exceed your expectations and elevate your online presence.
         </p>
 
-        <ul className={styles["services-grid"]}>
+        <ul className={styles["services-grid"]} role="list">
           {services.map((service, index) => (
             <li key={service.title + index}>
               <article className="flow">
