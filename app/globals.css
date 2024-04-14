@@ -286,6 +286,6 @@ section {
   transition: all 300ms ease-in-out;
 }
 
-.cta-btn:hover::before {
+.cta-btn:where(:hover, :focus-visible)::before {
   transform: scaleX(1);
 }

@@ -133,3 +133,18 @@ export const skills = [
     symbol: TailwindcssIcon,
   },
 ];
+
+export const socialLinks = [
+  {
+    label: "Github",
+    href: "https://github.com/husnain214/",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/husnainzahid/",
+  },
+  {
+    label: "Frontend Mentor",
+    href: "https://www.frontendmentor.io/profile/husnain214",
+  },
+];

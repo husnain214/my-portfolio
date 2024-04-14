@@ -1,4 +1,6 @@
+import Link from "next/link";
 import styles from "./styles.module.css";
+import { socialLinks } from "@/constants";
 
 export default function Footer() {
   return (
@@ -6,16 +8,24 @@ export default function Footer() {
       <div
         className={`container ${styles["footer-content"]} flex items-center`}
       >
-        <p>2024&copy; - Made by Husnain Zahid</p>
+        <p>{new Date().getFullYear()}&copy; - Made by Husnain Zahid</p>
 
         <ul
           role="list"
           className="flex justify-between items-center"
           style={{ "--gap": "2rem" }}
         >
-          <li>Github</li>
-          <li>LinkedIn</li>
-          <li>Twitter</li>
+          {socialLinks.map((link, index) => (
+            <li key={link.label + index}>
+              <Link
+                target="_blank"
+                href={link.href}
+                className={styles["social-link"]}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </footer>

@@ -4,6 +4,13 @@
   margin-top: 1rem;
 }
 
+.social-link {
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: var(--gradient-1);
+  color: var(--clr-primary);
+}
+
 @media (width > 45em) {
   .footer-content {
     justify-content: space-between;
