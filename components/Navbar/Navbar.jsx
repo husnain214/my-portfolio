@@ -40,7 +40,9 @@ export default function Navbar() {
         <div
           className={`${styles["nav-header"]} flex items-center justify-between`}
         >
-          <Image src={Logo} width="150" height="27" alt="logo" />
+          <Link href="/">
+            <Image src={Logo} width="150" height="27" alt="logo" />
+          </Link>
 
           <div className={styles["hamburger-btn"]}>
             <Hamburger
