@@ -259,6 +259,7 @@ section {
   flex-shrink: 0;
   isolation: isolate;
   overflow: hidden;
+  z-index: 0;
 
   background-color: var(--clr-secondary);
   color: var(--clr-neutral-2);

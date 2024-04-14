@@ -16,7 +16,6 @@ export default function Navbar() {
 
   useEffect(() => {
     const listener = window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
       if (window.scrollY > 5) {
         setScrolled(true);
       } else {
@@ -30,13 +29,18 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`${styles.header}`} data-scrolled={scrolled}>
+    <header
+      className={`${styles.header}`}
+      data-scrolled={scrolled}
+      data-visible={navVisible}
+    >
       <div
-        className="container flex items-center justify-between"
-        style={{ "--padding-block": 0, "--gap": "1.5rem" }}
+        className={`${styles["nav-container"]} container flex items-center justify-between`}
       >
-        <div className={styles["brand-container"]} data-expanded={navVisible}>
-          <Image src={Logo} width={150} />
+        <div
+          className={`${styles["nav-header"]} flex items-center justify-between`}
+        >
+          <Image src={Logo} width="150" height="27" alt="logo" />
 
           <div className={styles["hamburger-btn"]}>
             <Hamburger
@@ -48,23 +52,17 @@ export default function Navbar() {
           </div>
         </div>
 
-        <nav className={`${styles.navigation}`} data-visible={navVisible}>
+        <nav className={styles.navigation}>
           <ul role="list">
             {navLinks.map((link) => (
-              <li key={link.id} className={`${styles["list-item"]}`}>
-                <Link
-                  href={link.href}
-                  onClick={() => {
-                    setActive(link.id);
-                    setNavVisible(false);
-                  }}
-                >
+              <li key={link.id} className={styles["list-item"]}>
+                <Link href={link.href} onClick={() => setActive(link.id)}>
                   {link.label}
 
                   {active === link.id && (
                     <motion.div
                       layoutId="active-pill"
-                      className={styles["current-tab"]}
+                      className={styles["active-tab"]}
                     />
                   )}
                 </Link>
