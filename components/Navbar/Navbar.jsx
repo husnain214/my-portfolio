@@ -6,30 +6,37 @@ import styles from "./styles.module.css";
 import { Logo } from "@/assets/images";
 import Image from "next/image";
 import { navLinks } from "@/constants";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
 
 export default function Navbar() {
   const [navVisible, setNavVisible] = useState(false);
+  const [scrollingDown, setScrollingDown] = useState(false);
   const [active, setActive] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const { scrollY } = useScroll();
 
-  useEffect(() => {
-    const listener = window.addEventListener("scroll", () => {
-      if (window.scrollY > 5) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    });
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
 
-    return () => {
-      window.removeEventListener("scroll", listener);
-    };
-  }, []);
+    if (latest > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+
+    if (latest > previous && latest > 150) {
+      setScrollingDown(true);
+    } else setScrollingDown(false);
+  });
 
   return (
-    <header
+    <motion.header
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={scrollingDown ? "hidden" : "visible"}
       className={`${styles.header}`}
       data-scrolled={scrolled}
       data-visible={navVisible}
@@ -58,12 +65,18 @@ export default function Navbar() {
           <ul role="list">
             {navLinks.map((link) => (
               <li key={link.id} className={styles["list-item"]}>
-                <Link href={link.href} onClick={() => setActive(link.id)}>
+                <Link
+                  href={link.href}
+                  onClick={() => {
+                    setActive(link.id);
+                    setNavVisible(false);
+                  }}
+                >
                   {link.label}
 
                   {active === link.id && (
                     <motion.div
-                      layoutId="active-pill"
+                      layoutId={scrollingDown ? "" : "active-pill"}
                       className={styles["active-tab"]}
                     />
                   )}
@@ -73,6 +86,6 @@ export default function Navbar() {
           </ul>
         </nav>
       </div>
-    </header>
+    </motion.header>
   );
 }
