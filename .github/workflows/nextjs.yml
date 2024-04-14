@@ -3,7 +3,8 @@
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
 name: Deploy Next.js site to Pages
-
+env:
+  FORM_API_KEY: ${{ vars.FORM_API_KEY }}
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -82,8 +83,6 @@ jobs:
 
   # Deployment job
   deploy:
-    env:
-      FORM_API_KEY: ${{ vars.FORM_API_KEY }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
