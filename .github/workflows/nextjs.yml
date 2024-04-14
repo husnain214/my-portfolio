@@ -82,6 +82,8 @@ jobs:
 
   # Deployment job
   deploy:
+    env:
+      FORM_API_KEY: ${{ vars.FORM_API_KEY }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
