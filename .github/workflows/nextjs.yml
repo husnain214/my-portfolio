@@ -23,7 +23,8 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
+env:
+  FORM_API_KEY: ${{ vars.FORM_API_KEY }}
 jobs:
   # Build job
   build:
