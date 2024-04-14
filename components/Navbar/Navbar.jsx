@@ -32,10 +32,14 @@ export default function Navbar() {
 
   return (
     <motion.header
-      variants={{
-        visible: { y: 0 },
-        hidden: { y: "-100%" },
-      }}
+      variants={
+        navVisible
+          ? {}
+          : {
+              visible: { y: 0 },
+              hidden: { y: "-100%" },
+            }
+      }
       animate={scrollingDown ? "hidden" : "visible"}
       className={`${styles.header}`}
       data-scrolled={scrolled}
