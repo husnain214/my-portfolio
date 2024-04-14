@@ -30,9 +30,6 @@
   flex-wrap: wrap;
 }
 
-@media (width < 45em) {
-}
-
 .project-link {
   padding: 0.5rem 1rem;
   background-image: var(--gradient-1);
@@ -50,16 +47,6 @@
   .card {
     gap: 0.5rem;
     flex-direction: column;
-  }
-
-  /* .card:nth-child(2n) .image-container {
-    order: 2;
-  } */
-
-  .image-container {
-    --padding: 0.5rem;
-    border-radius: 16px;
-    height: auto;
   }
 
   .card-content {
