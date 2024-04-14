@@ -40,6 +40,10 @@
 }
 
 @media (width < 45em) {
+  .hero-section {
+    min-height: 75vh;
+  }
+
   .hero-section::before {
     top: 40vh;
   }
