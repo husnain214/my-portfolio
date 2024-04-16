@@ -18,7 +18,12 @@ export default function Skills() {
             {skills.map((skill, index) => (
               <li key={index} className={styles["skill-container"]}>
                 <div className={styles["skill-card"]}>
-                  <Image src={skill.symbol} />
+                  <Image
+                    src={skill.symbol}
+                    height="100"
+                    width="100"
+                    alt={skill.title}
+                  />
 
                   <span>{skill.title}</span>
                 </div>

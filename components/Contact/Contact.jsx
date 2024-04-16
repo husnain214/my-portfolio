@@ -30,6 +30,7 @@ export default function Contact() {
                 <input type="email" name="email" id="email" required />
               </div>
               <div className="grid">
+                <label htmlFor="message">Message:</label>
                 <textarea
                   name="message"
                   id="message"
