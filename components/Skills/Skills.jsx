@@ -22,7 +22,8 @@ export default function Skills() {
                     src={skill.symbol}
                     height="100"
                     width="100"
-                    alt={skill.title}
+                    alt=""
+                    role="presentation"
                   />
 
                   <span>{skill.title}</span>
